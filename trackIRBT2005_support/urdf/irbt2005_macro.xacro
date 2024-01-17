@@ -55,14 +55,14 @@
     </link>
 
     <!-- Joints -->
-    <joint name="${prefix}track_joint_1" type="prismatic">
+    <joint name="${prefix}track_joint1" type="prismatic">
       <origin xyz="-0.40 -0.5 -0.5" rpy="0 0 0" />
       <parent link="${prefix}track" />
       <child link="${prefix}TRACK_1" />
       <axis xyz="-1 0 0" />
       <limit lower="0" upper="5.5" effort="0" velocity="1" />
     </joint>
-    <joint name="${prefix}track_joint_2" type="prismatic">
+    <joint name="${prefix}track_joint2" type="prismatic">
       <origin xyz="-7.25 -0.5 -0.5" rpy="0 0 0" />
       <parent link="${prefix}track" />
       <child link="${prefix}TRACK_2" />
