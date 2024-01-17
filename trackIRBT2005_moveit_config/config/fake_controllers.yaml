@@ -1,6 +1,7 @@
 controller_list:
   - name: fake_manipulator_controller
     joints:
+      - track_base_link-base
       - track_joint1
       - track_joint2
       
