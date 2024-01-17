@@ -19,5 +19,5 @@
   <!-- Add MoveGroup capabilities specific to this pipeline -->
   <!-- <param name="capabilities" value="" /> -->
 
-  <rosparam command="load" file="$(find abb_irbt6004_670_moveit_config)/config/chomp_planning.yaml" />
+  <rosparam command="load" file="$(find trackIRBT2005_moveit_config)/config/chomp_planning.yaml" />
 </launch>
