@@ -1,1 +1,1 @@
-controller_joint_names: ['track_joint1', 'track_joint2']
+controller_joint_names: ['track_base_link-base', 'track_joint1', 'track_joint2']
