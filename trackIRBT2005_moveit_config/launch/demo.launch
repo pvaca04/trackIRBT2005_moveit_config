@@ -7,7 +7,7 @@
 
   <!-- By default, we are not in debug mode -->
   <arg name="debug" default="false" />
-  <arg name="use_rviz" default="false" />
+  <arg name="use_rviz" default="true" />
 
   <!--
   By default, hide joint_state_publisher's GUI
@@ -17,15 +17,12 @@
   It also provides a GUI to move the simulated robot around "manually".
   This corresponds to moving around the real robot without the use of MoveIt.
   -->
-  <arg name="use_gui" default="true" />
+  <arg name="use_gui" default="false" />
 
   <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
   <include file="$(find trackIRBT2005_moveit_config)/launch/planning_context.launch">
     <arg name="load_robot_description" value="true"/>
   </include>
-
-  <!-- If needed, broadcast static tf for robot root -->
-  
 
   <!-- We do not have a robot connected, so publish fake joint states -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
